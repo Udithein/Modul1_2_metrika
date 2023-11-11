@@ -1,0 +1,219 @@
+body {
+    background: rgb(142, 161, 144);
+    color: #1d1d1d;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font: normal 16px 'Roboto', sans-serif;
+}
+
+.section-overlay {
+    background: url(imagges/fon2.png );
+    /* Прописываем путь к картинке и задаем цвет и прозрачность */
+    background-size: cover;
+    /* ширина изображения в области*/
+    background-repeat: no-repeat;
+    /* изображение не повторяется в области*/
+    background-blend-mode: normal;
+    text-align: center;
+    /* Текст по центру */
+    color: rgb(255, 223, 185);
+    /* Цвет текста */
+    padding: 7%;
+    /* Отступ сверху и снизу */
+    font-size: 3em;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgb(95, 95, 95);
+    padding-top: 60px;
+
+}
+
+.picture {
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+
+.kavo {
+    width: 1000px;
+}
+
+.otstup {
+    text-align: left;
+
+
+    padding-left: 240px;
+}
+
+/*.avatar
+{
+text-align: center;
+width: 100%;
+height: 100%;
+border-radius: 28px;
+box-shadow: 4px 4px 14px rgba(0,0,0,0.25);
+}
+*/
+.tnk {
+    position: absolute;
+    color: width;
+    font-size: 2em;
+
+}
+
+.text1 p {
+    color: #1d1d1d;
+    margin: 0;
+    font-size: italic;
+    font-weight: none;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+}
+
+.vert1 {
+    width: 80%;
+    height: 80%;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+
+.vmeste1>div {
+
+    flex: 50%;
+    max-width: 50%;
+    min-width: 30%;
+
+    float: left;
+    border: 100px;
+
+}
+
+.vmeste1 {
+    padding: 0px 0px 260px 0px;
+
+}
+
+.contmeleft {
+    /* border-radius:8px;  скругляем края блока*/
+    width: 100%;
+    /* общая ширина блока*/
+    overflow: hidden;
+    /* скрывает возможность появления прокрутки блока. */
+}
+
+.contmeleft img {
+    width: 40%;
+    /* ширина картинки 140 */
+    height: 40%;
+    /* ысота картинки, от неё будет зависеть и размер общего блока */
+    object-fit: cover;
+    /* обрезаем края картинки, если они не вместятся в блок */
+    object-position: 0 70;
+    /* тоже обрезка краев */
+    margin-right: 25px;
+    float: left;
+    /* важный момент. с помощью этого знаения, мы показывем браузеру, что блок должен соприкасаться со вторым блоком приемущественно с левой стороны */
+}
+
+
+.contmeleft p {
+    overflow-wrap: normal;
+    /* показывает тексту, что он не должен заходить за границы блока */
+    word-wrap: normal;
+    word-break: normal;
+    /* не поддерживает Opera12.14, значение keep-all не поддерживается IE, Chrome */
+    line-break: auto;
+    /* нет поддержки для русского языка */
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    /* значение auto не поддерживается Chrome */
+
+    padding: 10px;
+    /* отступ от рамки до текста - делает его красивее */
+    margin-left: 15px;
+    /* отступ с левой стороны от блока с картинкой */
+    display: block;
+    /* обознначает, что это не просто бесформенный текст, а блок внутри блока */
+    /*font-weight:bold; толщина текста - толстый 
+    font-size:14px;  размер текста*/
+    margin: 2px 0px 0px 0px;
+    /* отступ от блока с текстом */
+}
+
+.cards {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+   justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.cards_item
+{
+    margin: 15px;
+}
+/*.cards_item:not(:last-child) {
+    
+    
+}*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #bfbfbf;
+}
+
+.card_image {
+    height: 250px;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-title
+{
+    margin: 0;
+    margin-bottom:15px;
+}
+
+.card_descr
+{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.card_btn
+{
+    margin-top: auto;
+    border:none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.cards_item .card
+{
+    
+height: 100%;
+}
